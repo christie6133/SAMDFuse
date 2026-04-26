@@ -35,10 +35,10 @@ To facilitate peer review and support academic reproducibility, we provide the f
 
 | Module | Paper Section | Description | Implementation File |
 | :--- | :--- | :--- | :--- |
-| **SFEM** | Section 3.1 | Sparse feature extraction & noise suppression | `models/SFEM.py` |
-| **SDFM** | Section 3.2 | Shallow detail calibration & channel aggregation | `models/fusion_modules.py` |
-| **DCFM** | Section 3.2 | Deep feature fusion (Self + Cross Attention) | `models/fusion_modules.py` |
-| **SGFM** | Section 3.3 | Spatially-adaptive semantic modulation | `models/SGFM.py` |
+| **SFEM** | Section 3.1 | Sparse feature extraction & noise suppression | `network/SFEM.py` |
+| **SDFM** | Section 3.2 | Shallow detail calibration & channel aggregation | `network/fusion_modules.py` |
+| **DCFM** | Section 3.2 | Deep feature fusion (Self + Cross Attention) | `network/fusion_modules.py` |
+| **SGFM** | Section 3.3 | Spatially-adaptive semantic modulation | `network/SGFM.py` |
 
 ---
 
@@ -73,3 +73,13 @@ This repository provides the core module implementations for clarity and reprodu
 The complete training and evaluation pipeline (including data loaders, training loops, hyperparameter schedules, and the full fusion model) will be made publicly available upon final acceptance of the paper.
 
 We believe that releasing these core components already fulfills the reproducibility requirements, as all novel architectural designs are fully disclosed. The full codebase is under active polishing to ensure high quality and ease of use for the community.
+
+## 🖋️ Citation
+If you find this work useful for your research, please consider citing our paper:
+@article{wang2026samdfuse,
+  title={SAMDFuse: Semantic-Aware Multi-Scale Degradation-Robust Fusion Network for SAR and Optical Images},
+  author={Wang, Ruoxi and Li, Yinhe and Zhang, Enhua and Chen, Wanni and Wang, Kaizhi},
+  journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+  note={Under review},
+  year={2026}
+}
