@@ -46,6 +46,7 @@ To facilitate peer review and support academic reproducibility, we provide the f
 ```text
 SAMDFuse/
 ├── README.md # This file
+├── LICENSE
 ├── requirements.txt # Dependencies
 ├── network/
 │ ├── layers.py
@@ -76,6 +77,7 @@ We believe that releasing these core components already fulfills the reproducibi
 
 ## 🖋️ Citation
 If you find this work useful for your research, please consider citing our paper:
+```bibtex
 @article{wang2026samdfuse,
   title={SAMDFuse: Semantic-Aware Multi-Scale Degradation-Robust Fusion Network for SAR and Optical Images},
   author={Wang, Ruoxi and Li, Yinhe and Zhang, Enhua and Chen, Wanni and Wang, Kaizhi},
