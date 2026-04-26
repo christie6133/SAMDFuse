@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+
 class SGFM(nn.Module):
     """
     Semantic-Guided Fusion Module (SGFM)
