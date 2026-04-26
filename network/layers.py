@@ -65,12 +65,7 @@ class Attention(nn.Module):
         dp = (q @ k_t) * self.scale  
 
         if self.cross:
-            # t_str = time.time()
-            # dp_s = dp.softmax(dim=-1)
-            # vision_features(dp_s, 'atten', 'dp_'+str(t_str))
             dp = -1 * dp
-            # attn = dp.softmax(dim=-1)
-            # vision_features(attn, 'atten', 'dp_v_'+str(t_str))
         attn = dp.softmax(dim=-1)  
         attn = self.attn_drop(attn)
         self.last_attn = attn
@@ -80,8 +75,6 @@ class Attention(nn.Module):
 
         x = self.proj(weighted_avg)  
         x = self.proj_drop(x)  
-
-        
         return x
 
 class Block(nn.Module):
